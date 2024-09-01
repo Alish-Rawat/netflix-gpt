@@ -3,8 +3,14 @@
 - Create React App
 - Configured Tailwind
 - Header
+- Routing
 - Login Form
 - Sighup Form
+- Form Validation
+- useRef Hook
+- Firebase Setup
+- Deploying our App to Production
+
 
 # Features
 
