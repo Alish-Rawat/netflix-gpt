@@ -13,6 +13,10 @@
 - create SingUp user Account
 - Implement Sign In user API
 - Create Redux Store with userSlice
+- Implemented SignOut
+- Update Profile
+- BugFix: Sign up user dispaly NAme and profile pic update
+- BugFix: If user is not logged in redirect /browse tp login and vice-versa
 
 # Features
 
