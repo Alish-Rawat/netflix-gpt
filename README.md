@@ -17,6 +17,10 @@
 - Update Profile
 - BugFix: Sign up user dispaly NAme and profile pic update
 - BugFix: If user is not logged in redirect /browse tp login and vice-versa
+- Unsubscribed to the onAuthStateChanged Callback
+- Added hardcodded urls to constant file
+- Register for TMBD Website for Movies Api
+- Get Data from TMBD now playing movies list API
 
 # Features
 

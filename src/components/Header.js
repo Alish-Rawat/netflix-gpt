@@ -7,6 +7,7 @@ import { addUser, removeUser } from "../utils/userSlice";
 import { onAuthStateChanged } from "firebase/auth";
 // import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
+import { LOGO } from "../utils/contants";
 
 const Header = () => {
   const Navigate = useNavigate();
@@ -25,7 +26,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         // User is signed in, see docs for a list of available properties
         // https://firebase.google.com/docs/reference/js/auth.user
@@ -47,22 +48,20 @@ const Header = () => {
         Navigate("/");
       }
     });
+    // unsubscibe when component unmounts
+    return () => unsubscribe();
   }, []);
 
   return (
     <div className="absolute w-screen px-28 py-3 bg-gradient-to-b from-black z-10 flex justify-between">
-      <img
-        src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
-        alt="logo"
-        className="w-48"
-      />
+      <img src={LOGO} alt="logo" className="w-48" />
 
       {user && (
         <div className="flex p-2">
           <img className="w-11 h-11" src={user?.photoURL} alt="userIcon" />
           <button
             onClick={handleSignOut}
-            className=" px-3 -translate-y-3 font-bold text-white"
+            className=" px-3 -translate-y-2 font-bold text-white"
           >
             (Sign Out)
           </button>
