@@ -21,6 +21,12 @@
 - Added hardcodded urls to constant file
 - Register for TMBD Website for Movies Api
 - Get Data from TMBD now playing movies list API
+- Custom Hook for now Playng movies
+- Update Store with Movies Data
+- create movieSlice
+- Fetch Data fro Trailer Video
+- Update Store with Trailer Video Data
+- Embedded the Youtube video and make it autoplay and mute
 
 # Features
 
