@@ -11,6 +11,7 @@ import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 import { USER_AVATAR } from "../utils/contants";
+import { BG_URL } from "../utils/contants";
 
 const Login = () => {
   const [isSingnInForm, setIsSignInForm] = useState(true);
@@ -111,11 +112,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/dae1f45f-c2c5-4a62-8d58-6e1b0c6b2d8e/6d1fb8a4-5844-42a4-9b01-1c6c128acf19/IN-en-20240827-TRIFECTA-perspective_WEB_c292a608-cdc6-4686-8dc8-405bfcf753af_small.jpg"
-          alt="logo"
-          className=""
-        ></img>
+        <img src={BG_URL} alt="logo" className=""></img>
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}

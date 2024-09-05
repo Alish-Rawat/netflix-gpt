@@ -27,6 +27,15 @@
 - Fetch Data fro Trailer Video
 - Update Store with Trailer Video Data
 - Embedded the Youtube video and make it autoplay and mute
+- Build Secondary Component
+- Build Movie list
+- build movie card
+- TMBD IMAGE CDN URL
+- Made the Browse page
+- Build many hooks to fetch the lists
+- GPT search fearture
+- Multi language feature in our APP
+- intergrate GPT APIS
 
 # Features
 
