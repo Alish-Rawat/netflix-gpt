@@ -112,13 +112,17 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img src={BG_URL} alt="logo" className=""></img>
+        <img
+          src={BG_URL}
+          alt="logo"
+          className="h-screen object-cover w-screen"
+        ></img>
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="absolute bg-black w-3/12 p-12 my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80"
+        className="absolute bg-black w-[90%]  sm:w-96 p-12 my-28 sm:my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80"
       >
-        <h1 className="font-bold text-3xl py-4">
+        <h1 className="font-bold sm:text-3xl text-2xl py-4">
           {isSingnInForm ? "Sign In" : "Sign Up"}
         </h1>
         {!isSingnInForm && (
@@ -144,12 +148,12 @@ const Login = () => {
         />
         <p className="text-red-500 font-bold text-lg py-2">{errorMessage}</p>
         <button
-          className="p-4 my-6 bg-red-700 w-full rounded-lg"
+          className="p-4 sm:my-6 my-4  bg-red-700 w-full rounded-lg"
           onClick={HandleButtonClick}
         >
           {isSingnInForm ? "Sign In" : "Sign Up"}
         </button>
-        <p className="py-4 cursor-pointer" onClick={toggeleSignInForm}>
+        <p className="sm:py-4 py-0 cursor-pointer" onClick={toggeleSignInForm}>
           {isSingnInForm
             ? "New to Netflix? Sign Up Now"
             : "Already registered? Sign In Now."}

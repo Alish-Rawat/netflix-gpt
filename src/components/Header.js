@@ -64,7 +64,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="absolute w-screen px-28 py-3 bg-gradient-to-b from-black z-10 flex justify-between">
+    <div className="absolute w-screen px-28 py-3 bg-gradient-to-b from-black z-10 flex  sm:justify-between justify-center">
       <img src={LOGO} alt="logo" className="w-48" />
 
       {user && (
@@ -81,22 +81,22 @@ const Header = () => {
               ))}
             </select>
           )}
-          <button
+          {/* <button
             className="py-2 px-4  mx-4 my-2 bg-purple-800 hover:bg-purple-600 rounded-lg text-white"
             onClick={handleGptSearchClick}
           >
             {showGptSearch ? "Homepage" : "GPT Search"}
-          </button>
+          </button> */}
           <img
-            className="w-11 h-11 translate-y-3"
+            className="sm:w-11 sm:h-11 w-8 h-8 translate-y-3 translate-x-10 sm:translate-x-0"
             src={user?.photoURL}
             alt="userIcon"
           />
           <button
             onClick={handleSignOut}
-            className=" px-3 translate-y-2 font-bold text-white"
+            className=" px-3 translate-y-2 translate-x-10 sm:translate-x-0 font-bold text-white text-sm sm:text-lg"
           >
-            (Sign Out)
+            (SignOut)
           </button>
         </div>
       )}

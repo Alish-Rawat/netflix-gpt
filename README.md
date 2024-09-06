@@ -36,6 +36,7 @@
 - GPT search fearture
 - Multi language feature in our APP
 - intergrate GPT APIS
+- Made Responsive
 
 # Features
 
