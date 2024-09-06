@@ -3,7 +3,7 @@ export const checkValidateData = (email, password, name) => {
     email
   );
   const isPasswordValid =
-    /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/.test(password);
+    /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{6,}$/.test(password);
   const isFullName = /^[A-Z][a-zA-Z]{3,}(?: [A-Z][a-zA-Z]*){0,2}$/.test(name);
 
   //   if (!isFullName) return "Full Name is not Valid";

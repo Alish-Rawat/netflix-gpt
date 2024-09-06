@@ -146,6 +146,10 @@ const Login = () => {
           placeholder="Password"
           className="p-4 my-4 w-full bg-gray-700"
         />
+        <p className="text-sm text-gray-400">
+          Password must have at least 6 characters, including one Capital letter
+          and one Number.
+        </p>
         <p className="text-red-500 font-bold text-lg py-2">{errorMessage}</p>
         <button
           className="p-4 sm:my-6 my-4  bg-red-700 w-full rounded-lg"
